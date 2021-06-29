@@ -20,3 +20,21 @@
 :host ::ng-deep.p-toast-message-custom.p-toast-icon-close {
     color: #2c1e30;
 } */
+h1{
+    background-color: #0166FF;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Spectral', serif;
+    color: azure;
+    font-size: 14pt;
+    text-align: left;
+}
+
+h2{
+    background-color: #0166FF;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Spectral', serif;
+    font-size: 10pt;
+    color: azure;
+    text-align: left;
+
+}

@@ -20,6 +20,10 @@
 
 <button pButton type="button" (click)="showDialog()" icon="pi pi-info-circle" label="Show"></button!-->
 
-<p-slider [(ngModel)]="val" [style]="{'width':'15rem'}"></p-slider>
 
-<p-listbox [options]="times" [(ngModel)] = "selectedTime" optionLabel="name" [style]="{'width':'15rem'}"></p-listbox>
+<h1>Fecha de reserva</h1>
+<h2>Periodo de tiempo por horas (salas)</h2>
+<app-slider></app-slider>
+<hr>
+<app-listbox></app-listbox>
+

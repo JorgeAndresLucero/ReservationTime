@@ -10,16 +10,7 @@ interface Time {
 })
 export class AppComponent implements OnInit {
 
-  title = 'Spinner';
-  val: number=0;
-  rangeValues: number[] = [7,18];
 
-
-  times: Time[];
-  selectedTime!: Time;
-
-  
-     
   itemsMenu: MenuItem[] = [];
   itemsPanel: MenuItem[] = [];
   value: Date = new Date();
@@ -28,13 +19,7 @@ export class AppComponent implements OnInit {
   constructor(
     private messageService: MessageService
   ) { 
-    this.times =[
-      {name: "30 minutos"},
-      {name: "1 hora"},
-      {name: "2 horas"}
-    ];
-    
-    
+ 
   }
 
   ngOnInit(): void {

@@ -9,10 +9,14 @@ import { PrimeNgModule } from './prime-ng/prime-ng.module';
 
 import { AppComponent } from './app.component';
 import { MessageService } from 'primeng/api';
+import { SliderComponent } from './components/slider/slider.component';
+import { ListboxComponent } from './components/listbox/listbox.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SliderComponent,
+    ListboxComponent
   ],
   imports: [
     CommonModule,
