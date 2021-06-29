@@ -1,12 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem, MessageService } from 'primeng/api';
-
+interface Time {
+  name: string
+}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+
+  title = 'Spinner';
+  val: number=0;
+  rangeValues: number[] = [7,18];
+
+
+  times: Time[];
+  selectedTime!: Time;
+
+  
+     
   itemsMenu: MenuItem[] = [];
   itemsPanel: MenuItem[] = [];
   value: Date = new Date();
@@ -14,7 +27,15 @@ export class AppComponent implements OnInit {
 
   constructor(
     private messageService: MessageService
-  ) { }
+  ) { 
+    this.times =[
+      {name: "30 minutos"},
+      {name: "1 hora"},
+      {name: "2 horas"}
+    ];
+    
+    
+  }
 
   ngOnInit(): void {
     this.itemsMenu = [

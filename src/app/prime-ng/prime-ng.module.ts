@@ -6,6 +6,8 @@ import { DialogModule } from 'primeng/dialog';
 import { MenubarModule } from 'primeng/menubar';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { ToastModule } from 'primeng/toast';
+import {SliderModule } from 'primeng/slider';
+import { ListboxModule} from 'primeng/listbox';
 
 @NgModule({
   exports: [
@@ -14,7 +16,9 @@ import { ToastModule } from 'primeng/toast';
     DialogModule,
     MenubarModule,
     PanelMenuModule,
-    ToastModule
+    ToastModule,
+    SliderModule, 
+    ListboxModule
   ]
 })
 export class PrimeNgModule { }

@@ -1,4 +1,4 @@
-<p-menubar [model]="itemsMenu">
+<!--p-menubar [model]="itemsMenu">
     <img src="../favicon.ico" class="p-mr-2">
 </p-menubar>
 
@@ -18,5 +18,8 @@
     Content
 </p-dialog>
 
-<button pButton type="button" (click)="showDialog()" icon="pi pi-info-circle" label="Show"></button>
+<button pButton type="button" (click)="showDialog()" icon="pi pi-info-circle" label="Show"></button!-->
 
+<p-slider [(ngModel)]="val" [style]="{'width':'15rem'}"></p-slider>
+
+<p-listbox [options]="times" [(ngModel)] = "selectedTime" optionLabel="name" [style]="{'width':'15rem'}"></p-listbox>
